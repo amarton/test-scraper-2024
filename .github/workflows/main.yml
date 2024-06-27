@@ -5,10 +5,10 @@ on:
     - cron: "0 8 * * *" # 8 a.m. every day UTC
   workflow_dispatch:
 
-  jobs:
-    scrape:
-      runs-on: ubuntu-latest
-      steps:
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
       with:
